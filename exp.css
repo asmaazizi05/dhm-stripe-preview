@@ -1,0 +1,353 @@
+/* ===================== EXPERIENCE MODAL SYSTEM ===================== */
+.exp-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999999 !important;
+  display: none;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.exp-modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(10, 17, 40, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+.exp-sheet {
+  position: relative !important;
+  max-width: 900px !important;
+  width: 100% !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  margin: auto !important;
+  background: #FAF7F2 !important;
+  border-radius: 28px !important;
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  z-index: 10 !important;
+  top: 0 !important;
+  transform: none !important;
+}
+
+.exp-x {
+  position: absolute !important;
+  top: 20px !important;
+  right: 24px !important;
+  z-index: 99 !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #FFFFFF !important;
+  font-size: 1.4rem !important;
+  font-weight: 300 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.25s ease !important;
+  line-height: 1 !important;
+}
+
+.exp-x:hover {
+  background: #C85A32 !important;
+  color: #FFFFFF !important;
+  border-color: #C85A32 !important;
+  transform: rotate(90deg) scale(1.08) !important;
+}
+
+.exp-hero {
+  position: relative !important;
+  width: 100% !important;
+  height: 350px !important;
+  flex: none !important;
+}
+
+.exp-hero img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.exp-hero-shadow {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0.88) 100%) !important;
+}
+
+.exp-hero-title {
+  position: absolute !important;
+  left: 32px !important;
+  right: 32px !important;
+  bottom: 28px !important;
+  color: #FFFFFF !important;
+  z-index: 2 !important;
+}
+
+.exp-hero-title h2 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(2rem, 3.5vw, 2.6rem) !important;
+  color: #FFFFFF !important;
+  margin: 0 0 12px !important;
+  line-height: 1.15 !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+.exp-badges {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.exp-badge {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #FFFFFF !important;
+  padding: 6px 16px !important;
+  border-radius: 99px !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.exp-badge-price {
+  background: rgba(200, 90, 50, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: #FFFFFF !important;
+}
+
+.exp-body {
+  flex: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 36px 32px !important;
+  background: #FAF7F2 !important;
+  color: #0F172A !important;
+}
+
+.exp-desc{
+  margin: 0 0 20px;
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.exp-panels{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-panel{
+  padding: 20px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid rgba(15,23,42,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.04);
+}
+
+.exp-panel h3{
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.exp-ul{
+  margin: 0;
+  padding-left: 20px;
+  color: #475569;
+  line-height: 1.8;
+}
+
+/* =========================
+   MAGNIFICENT BOOKING UI
+========================= */
+.book-card{
+  margin-top: 24px;
+  padding: 24px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 20px;
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,.08);
+}
+
+.book-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom: 16px;
+}
+
+.book-price{
+  display:flex;
+  flex-direction:column;
+}
+
+.book-price-label{
+  font-size:0.9rem;
+  color:#64748b;
+  font-weight:700;
+}
+
+.book-price strong{
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.book-title{
+  font-weight: 900;
+  font-size: 1.1rem;
+  color:#0f172a;
+  margin-bottom: 16px;
+}
+
+.book-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 16px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.book-label{
+  font-weight: 800;
+  color:#334155;
+}
+
+.qty{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.qty-btn{
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 0;
+  cursor:pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color:#fff;
+  background: var(--primary);
+  box-shadow: 0 5px 15px rgba(211,84,0,.2);
+  transition: transform .2s ease;
+}
+
+.qty-btn:hover{ transform: scale(1.1); }
+
+.qty input{
+  width: 40px;
+  text-align:center;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color:#0f172a;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.book-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.book-grid > div{
+  background:#f1f5f9;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.book-input{
+  width:100%;
+  margin-top: 8px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,.1);
+  padding: 0 14px;
+  font-weight: 700;
+  background:#fff;
+  outline: none;
+}
+
+.book-input:focus{
+  border-color: var(--primary);
+}
+
+.book-total{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px dashed rgba(15,23,42,.1);
+  font-weight: 900;
+  color:#0f172a;
+  font-size: 1.1rem;
+}
+
+.book-total strong{
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.book-btn{
+  margin-top: 20px;
+  width: 100%;
+  height: 56px;
+  border:0;
+  border-radius: 16px;
+  cursor:pointer;
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #fff;
+  background: linear-gradient(90deg, #25D366, #128C7E);
+  box-shadow: 0 16px 40px rgba(37,211,102,.3);
+  transition: transform .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-btn:hover{ transform: translateY(-2px); }
+
+.book-note{
+  margin-top: 12px;
+  font-size: .85rem;
+  color:#64748b;
+  text-align:center;
+}
+
+@media (max-width: 900px) {
+  .exp-sheet { flex-direction: column; overflow-y: auto; overflow-x: hidden; height: min(850px, 92vh); }
+  .exp-hero { flex: none; height: 350px; }
+  .exp-body { flex: none; height: auto; overflow-y: visible; padding: 24px; }
+  .exp-x { top: 12px; right: 12px; background: rgba(0,0,0,0.4); color: white; border: 1px solid rgba(255,255,255,0.2); }
+  .exp-hero-title h2 { font-size: 2.2rem; }
+}
+
+@media (max-width: 600px) {
+  .book-grid { grid-template-columns: 1fr; }
+}
